@@ -1,7 +1,30 @@
 aid: kiira
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/kiira.png
 name: Kiira
-description: Kiira is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Kiira (Kiira Health) was a student-focused digital health / telehealth platform
+  that partnered with colleges and universities to bridge the gap between students
+  and clinicians, providing online visits with doctors, nurses, and therapists,
+  primary care and gynecological consultations, mental health support, and health
+  literacy workshops and education resources through a patient booking portal. It
+  was surfaced as a portfolio company of 500 Global. As of this pass the company
+  operated a consumer/patient web app only and published no public developer API,
+  documentation, SDKs, or developer portal, so there is no API surface to enrich.
+  Its recorded domain kiira.io is no longer controlled by the company — it now
+  redirects to an unrelated third-party site — so this profile reflects the
+  company's last-known (archived, Dec 2024) state and is treated as a defunct /
+  lapsed lead.
 url: https://raw.githubusercontent.com/api-evangelist/kiira/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +32,24 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct-domain
+x-status-detail: >-
+  Recorded website https://kiira.io returns HTTP 200 but redirects off-domain to an
+  unrelated third-party site (rsrosela.com) as of 2026-07-19; the domain appears
+  sold/parked. Last live archived snapshot: web.archive.org 2024-12-27. No developer
+  API surface ever published. Enrichment pipeline found nothing to harvest (no
+  OpenAPI/docs/SDKs/well-known/MCP); no artifacts fabricated.
+x-enrichment-last-run: '2026-07-19'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Healthcare
+- Telehealth
+- Digital Health
+- Student Health
+- Mental Health
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +59,8 @@ maintainers:
 common:
 - type: Website
   url: https://kiira.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
